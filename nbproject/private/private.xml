@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Controller/DefaultController.php</file>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Resources/public/css/yp.styles.css</file>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Form/Type/ContactType.php</file>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Form/Model/Contact.php</file>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Resources/views/main/index.html.twig</file>
+            <file>file:/D:/wamp/www/yp_public/src/Yustplayit/WebBundle/Resources/views/email/contactForm.txt.twig</file>
+        </group>
+    </open-files>
+</project-private>

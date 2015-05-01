@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        {% block head %}
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="">
+            <meta name="author" content="">
+
+            <title>Yustplayit</title>
+            {% block stylesheets %}
+                {% stylesheets filter='cssrewrite' 
+                    'bundles/yustplayitweb/css/bootstrap.min.css'
+                    'bundles/yustplayitweb/css/bootstrap-theme.min.css'
+                    'bundles/yustplayitweb/css/yp.styles.css'
+                %}
+                  <link rel="stylesheet" href="{{ asset_url }}" />
+                {% endstylesheets %}
+            {% endblock %}
+            
+            {% block javascripts %}
+                {% javascripts '@YustplayitWebBundle/Resources/public/js/jquery-2.1.3.js'
+                    '@YustplayitWebBundle/Resources/public/js/bootstrap.min.js' 
+                %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+                {% endjavascripts %} 
+            {% endblock %}
+            
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% endblock %}
+    </head>
+    
+    <body>    
+        {% form_theme form 'bootstrap_3_layout.html.twig' %} 
+        {{ form_start(form) }}      
+        {{ form_row(form.nombre) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.consulta) }}
+        {{ form_end(form) }} 
+    </body>
+</html>

@@ -1,0 +1,5 @@
+yustplayit_web:
+    resource: "@YustplayitWebBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

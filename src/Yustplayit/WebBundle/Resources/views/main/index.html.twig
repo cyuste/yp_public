@@ -1,0 +1,81 @@
+{% extends 'YustplayitWebBundle:templates:base.html.twig' %}
+
+{% block content %}
+    <!-- Page Header -->
+
+    <header class="intro-header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Yustplayit</h1>
+                        <hr class="small">
+                        <span class="subheading">Soluciones de digital signage... y mucho más</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        La información de tu empresa, a un click:
+                    </h2>
+                    Yustplayit tiene un solo objetivo: Ofrecer una plataforma sencilla para la distribución de contenidos digitales.
+                    Nuestra solución se adapta a tus necesidades: ¿Necesitas una sola pantalla? ¿O quieres crear un canal de contenidos 
+                    en tu cadena de tiendas? ¿Tienes en mente algo totalmente diferente? Seguro que podemos ayudarte
+                    <ul>
+                        <li>Control centralizado. Gestiona todos los equipos desde la web.</li>
+                        <li>Añade y elimina contenidos desde la web. Interfaz sencillo e intuitivo.</li>
+                        <li>Configura los contenidos reproducidos en cada equipo individualmente, o</li>
+                        <li>Crea grupos de equipos y gestiónalos conjuntamente </li>  
+                    </ul>
+                    {% image '@YustplayitWebBundle/Resources/public/images/window.png' %}
+                        <img src="{{ asset_url }}" width="600px" alt="Web" />
+                    {% endimage %}
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        Conectar y listo:
+                    </h2>
+                    <ul>
+                        <li>Reproduce todo tipo de contenidos: imagenes, videos, webs, presentaciones.</li>
+                        <li>Equipos pequeños, silenciosos y de consumo eléctrico muy reducido (como cargar tu móvil).</li>
+                        <li>Compatible con cualquier equipo actual: monitores, televisiones, proyectores, videowalls...</li>
+                    </ul>
+                    {% image '@YustplayitWebBundle/Resources/public/images/rb_1.jpg' %}
+                        <img src="{{ asset_url }}" width="400px" alt="Equipo" />
+                    {% endimage %}
+                </div>
+                <hr>        
+            </div>
+        </div>
+    </div>
+                
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        Contacto:
+                    </h2>
+                    <i>¿Y ya está?</i> - ¡Sí!  Es así de sencillo. 
+                    ¿Te interesa? ¿Deseas más información? ¡Solicita una prueba!
+                    {% form_theme form 'bootstrap_3_layout.html.twig' %} 
+                    {{ form_start(form) }}      
+                    {{ form_row(form.empresa) }}
+                    {{ form_row(form.email) }}
+                    {{ form_row(form.telefono) }}
+                    {{ form_row(form.consulta) }}
+                    {{ form_end(form) }}
+                    </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+{% endblock %}
