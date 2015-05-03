@@ -1,0 +1,51 @@
+{% extends 'YustplayitWebBundle:templates:base.html.twig' %}
+
+
+{% block content %}
+    <header class="intro-header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Yustplayit</h1>
+                        <hr class="small">
+                        <span class="subheading">Soluciones de digital signage... y mucho más</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        Qué más hacemos:
+                    </h2>
+                    Yustplayit: on-demand ofrece una plataforma para la gestión de contenidos bajo demanda en tu red de locales.
+                    Esta solución esta pensada para centros educativos, como academias de idiomas o autoescuelas, con la idea de que los centros
+                    dispongan de una ayuda audiovisual como apoyo a las clases. El encargado de los contenidos los distribuye
+                    entre los equipos que integran el sistema, teniendo en todo momento control sobre los contenidos que se distribuyen 
+                    a cada centro. Una vez que los videos han sido descargados en el centro, el encargado de la clase controla la
+                    reproducción como si fuera un reproductor doméstico.  
+                    {% image '@YustplayitWebBundle/Resources/public/images/window.png' %}
+                        <img src="{{ asset_url }}" width="600px" alt="Web" />
+                    {% endimage %}
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        Espera... Aún hay más:  Servicios profesionales
+                    </h2>
+                    ¿Tienes una idea pero no cuentas con el equipo técnico para llevarla a cabo? Seguro que podemos ayudarte. Nuestra
+                    empresa cuenta con un gran equipo de profesionales con amplia experiencia en el mundo de la informatica y las
+                    telecomunicaciones. Rellena nuestro <a href="{{ path('index') }}#contacto">formulario de contacto</a> y nos
+                    pondremos en contacto de inmediato.
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+                
+{% endblock %}

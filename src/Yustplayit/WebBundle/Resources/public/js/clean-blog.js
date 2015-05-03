@@ -8,8 +8,9 @@
 
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
+    // I don't see the point of this, but I'm too coward to just remove it
     var MQL = 1170;
-
+    //var MQL = 600;
     //primary navigation slide-in effect
     if ($(window).width() > MQL) {
         var headerHeight = $('.navbar-custom').height();

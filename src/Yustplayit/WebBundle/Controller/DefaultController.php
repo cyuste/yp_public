@@ -48,6 +48,15 @@ class DefaultController extends Controller
     }
     
     /**
+     * @Route("/servicios", name="servicios")
+     * @Template()
+     */
+    public function servicesAction()
+    {
+        return $this->render('YustplayitWebBundle:main:services.html.twig');   
+    }
+    
+    /**
      * @Route("/", name="index")
      * @Template()
      */
